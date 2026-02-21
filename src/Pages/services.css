@@ -1,0 +1,192 @@
+.servicesMainContainer {
+  min-height: 100vh;
+  background-color: #000000;
+  padding: 2rem clamp(1rem, 3vw, 2rem) 5rem;
+}
+.servicesMainContainer h1 {
+  padding-top: 2rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+}
+
+.partOne {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.leftSidePart {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.saly2 {
+  width: 100%;
+  height: max-content;
+  object-fit: cover;
+  background-position: center;
+}
+
+.rightSidePart {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.serviceBox {
+  width: 90%;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.167);
+}
+
+.leftSideServiceBox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 0.5rem;
+  min-width: 4rem;
+}
+
+.leftSideServiceBox .fa-solid,
+.leftSideServiceBox .fas,
+.leftSideServiceBox .fa-brands {
+  font-size: clamp(3rem, 4vw, 4rem);
+}
+
+.rightSideServiceBox {
+  flex: 1;
+}
+
+.rightSideServiceBox h2 {
+  font-weight: 500;
+  font-size: clamp(1.5rem, 2.2vw, 1.8rem);
+  margin-bottom: 0.7rem;
+}
+
+.rightSideServiceBox h3 {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: clamp(1.3rem, 1.8vw, 1.5rem);
+  line-height: 1.6;
+}
+
+.partTwo {
+  max-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: 2rem;
+  /* background-image: radial-gradient(
+      at 50% 0%,
+      rgba(39, 51, 89, 0) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 100%, hsla(339, 49%, 30%, 1) 0, transparent 50%); */
+}
+
+.partTwo .serviceBox {
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 1.8rem;
+  border-radius: 16px;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.rocket {
+  width: 90%;
+  height: max-content;
+}
+
+@media only screen and (max-width: 1260px) and (min-width: 1000px) {
+  .partTwo {
+    margin-top: 8rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .partOne,
+  .partTwo {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  .leftSidePart {
+    width: 80%;
+  }
+  .saly2 {
+    max-width: 100%;
+  }
+  .rightSidePart {
+    width: 90%;
+  }
+  .partTwo .leftSidePart {
+    display: none;
+  }
+  .serviceBox {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .servicesMainContainer h1 {
+    font-size: 2.2rem;
+  }
+  .leftSidePart {
+    width: 100%;
+  }
+  .rightSidePart {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .leftSideServiceBox {
+    min-width: 3rem;
+  }
+  .leftSideServiceBox .fa-solid,
+  .leftSideServiceBox .fas,
+  .leftSideServiceBox .fa-brands {
+    font-size: 2.5rem;
+  }
+  .rightSidePart {
+    width: 100%;
+  }
+  .servicesMainContainer h1 {
+    font-size: 2rem;
+  }
+  .rightSideServiceBox h3 {
+    text-align: justify;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .servicesMainContainer {
+    padding: 1rem 0.5rem 5rem;
+  }
+  .servicesMainContainer h1 {
+    font-size: 1.8rem;
+  }
+  .serviceBox {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+  .rightSideServiceBox h2 {
+    font-size: 1.4rem;
+  }
+  .rightSideServiceBox h3 {
+    font-size: 1.2rem;
+  }
+}

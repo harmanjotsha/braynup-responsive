@@ -1,0 +1,251 @@
+.FooterMain {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0f0e13;
+  
+  position: relative;
+}
+
+.fhhostingDiv {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 5rem 2rem 2rem;
+}
+
+.fhhostingDiv img {
+  width: clamp(20rem, 30vw, 30rem);
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 2rem;
+}
+.fhhostingDiv h2 {
+  font-size: clamp(1.5rem, 2vw, 1.8rem);
+  color: gray;
+  font-weight: 400;
+}
+
+.fhhostingDiv p {
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  text-align: center;
+  color: gray;
+  font-weight: 400;
+  max-width: 800px;
+}
+.socialLinks {
+  width: clamp(280px, 40%, 400px);
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+li {
+  list-style: none;
+  position: relative;
+  z-index: 1;
+}
+.socialLinks .slink {
+  width: clamp(5.5rem, 7vw, 7.5rem);
+  height: clamp(5.5rem, 7vw, 7.5rem);
+  position: relative;
+  border: none;
+  background-color: #ffffff;
+  backdrop-filter: blur(50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  padding: 1.2rem;
+}
+
+.socialLinks .slink:hover {
+  transform: translateY(-0.5rem) scale(1.05);
+  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.2);
+  background-color: #f0f0f0;
+}
+
+.fa-brands {
+  font-size: clamp(3.8rem, 5vw, 4.8rem);
+  color: #000000;
+}
+.slink::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -12rem;
+  width: 4rem;
+  height: 100%;
+  background-color: rgba(103, 61, 230, 0.3);
+  transform: skew(45deg);
+  transition: 0.5s;
+}
+
+.socialLinks li:hover .slink::before {
+  right: 12rem;
+}
+.footers {
+  margin-top: 5rem;
+  width: 100%;
+  background-color: rgba(250, 235, 215, 0.194);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem clamp(1rem, 3vw, 2rem);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.Parts {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.footerSectionPart {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+.footerSectionPart h3 {
+  font-weight: 500;
+  font-size: clamp(1.5rem, 2vw, 1.8rem);
+  margin-bottom: 1.5rem;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+}
+.links a {
+  color: rgba(234, 224, 224, 0.603);
+  font-weight: 400;
+  font-size: clamp(1.2rem, 1.8vw, 1.4rem);
+  margin-bottom: 1rem;
+}
+.links a:hover {
+  color: rgb(255, 255, 255);
+}
+#secondLinkPart {
+  margin-top: 5rem;
+}
+
+.footers p {
+  width: 100%;
+  padding: 1rem;
+  border-top: 1px solid gray;
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  color: rgba(233, 224, 224, 0.815);
+  text-align: center;
+  margin-top: 2rem;
+}
+.footers p a {
+  color: rgba(255, 255, 255, 0.815);
+}
+
+@media only screen and (max-width: 1000px) {
+  .fhhostingDiv {
+    width: 85%;
+  }
+  .socialLinks {
+    width: 60%;
+  }
+  .socialLinks .slink {
+    width: 6.5rem;
+    height: 6.5rem;
+    padding: 1.2rem;
+  }
+  .fa-brands {
+    font-size: 4.2rem;
+  }
+}
+@media only screen and (max-width: 840px) {
+  .socialLinks {
+    width: 80%;
+  }
+  .socialLinks .slink {
+    width: 6.5rem;
+    height: 6.5rem;
+    padding: 1.2rem;
+  }
+  .fa-brands {
+    font-size: 4.2rem;
+  }
+  .Parts {
+    gap: 3rem;
+  }
+  .footerSectionPart {
+    width: 45%;
+    min-width: 180px;
+  }
+}
+@media only screen and (max-width: 586px) {
+  .lastPart {
+    display: none;
+  }
+  .footerSectionPart {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .fhhostingDiv {
+    width: 95%;
+    padding: 3rem 1rem 2rem;
+  }
+  .fhhostingDiv h2 {
+    font-size: 1.4rem;
+  }
+  .fhhostingDiv p {
+    font-size: 1.3rem;
+  }
+  .socialLinks {
+    width: 100%;
+  }
+  .socialLinks .slink {
+    width: 6rem;
+    height: 6rem;
+    padding: 1.1rem;
+  }
+  .fa-brands {
+    font-size: 3.8rem;
+  }
+  .footerSectionPart {
+    width: 45%;
+  }
+  .footers p {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .fhhostingDiv h2 {
+    font-size: 1.3rem;
+  }
+  .fhhostingDiv p {
+    font-size: 1.2rem;
+  }
+  .socialLinks .slink {
+    width: 5.5rem;
+    height: 5.5rem;
+    padding: 1rem;
+  }
+  .fa-brands {
+    font-size: 3.5rem;
+  }
+  .footerSectionPart {
+    width: 45%;
+  }
+  .footers p {
+    font-size: 1rem;
+  }
+}

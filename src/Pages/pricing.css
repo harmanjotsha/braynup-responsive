@@ -1,0 +1,214 @@
+.PicingSectionMain {
+  background-color: #0f0e13;
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.PicingSectionMain h1 {
+  font-weight: 500;
+  padding-top: 3rem;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  text-align: center;
+}
+
+.plans {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: clamp(2rem, 5vw, 5rem);
+  padding: 0 2rem;
+}
+
+.plan {
+  width: clamp(280px, 28%, 450px);
+  padding: 2rem clamp(1.5rem, 3vw, 5rem);
+  min-height: 90rem;
+  text-align: left;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.167);
+}
+
+
+
+
+.bestValue {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.bestValue::before {
+  content: "Best Value";
+  font-size: 1.5rem;
+  padding: 0.7rem 0;
+  width: 100%;
+  background-color: #fb1f61ad;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bestValue h2 {
+  margin-top: 3rem;
+}
+.plan h2 {
+  font-size: clamp(1.8rem, 2.5vw, 2.2rem);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.plan h3 {
+  font-weight: 400;
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
+}
+.plan h6{
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
+  font-weight: 400;
+}
+.plan strong{
+  font-size: clamp(3.5rem, 5vw, 5rem);
+  font-weight: 700;
+  margin-top: auto;
+}
+#price {
+  font-weight: 400;
+  font-size: clamp(2.5rem, 3.5vw, 3rem);
+  margin-top: 2rem;
+}
+
+.charge{
+  text-align: left;
+  font-size: clamp(3.5rem, 5vw, 5rem);
+  font-weight: 700;
+  margin-top: auto;
+}
+
+.addToCart {
+  margin-top: 1rem;
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  padding: 1.2rem clamp(5%, 15%, 22%);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 3rem;
+  background-color: cornflowerblue;
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.187);
+  width: 100%;
+  max-width: 35rem;
+}
+.addToCart a {
+  width: 100%;
+}
+.addToCart:hover {
+  transform: translateY(-5px);
+}
+
+#nextTime {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  margin-top: 1.2rem;
+  color: rgba(216, 198, 198, 0.993);
+}
+
+.fetures {
+  margin-top: 2.5rem;
+}
+
+.fetures h3 {
+  color: white;
+  text-align: start;
+  padding-left: clamp(2rem, 5vw, 5rem);
+  font-size: clamp(1.5rem, 2vw, 1.8rem);
+  margin-bottom: 1.5rem;
+}
+.fetures h4 {
+  color: rgba(255, 255, 255, 0.781);
+  font-weight: 400;
+  padding-left: clamp(3rem, 8vw, 8rem);
+  text-align: start;
+  font-size: clamp(1.2rem, 1.8vw, 1.4rem);
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+.fetures h4 b {
+  color: white;
+  font-weight: 500;
+}
+
+.premiumBtn {
+  background-color: rgb(247, 45, 106);
+}
+
+.businessBtn {
+  background-color: rgb(255, 157, 60);
+}
+
+@media only screen and (max-width: 1245px) {
+  .plan {
+    width: clamp(300px, 40%, 500px);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .PicingSectionMain {
+    padding-top: 2rem;
+  }
+  .plan {
+    width: clamp(320px, 45%, 550px);
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .plan {
+    width: clamp(300px, 70%, 600px);
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .plan {
+    width: 85%;
+    max-width: 500px;
+  }
+  .PicingSectionMain h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 554px) {
+  .PicingSectionMain {
+    padding-top: 2rem;
+  }
+  .PicingSectionMain h1 {
+    font-size: 2rem;
+  }
+  .plan {
+    width: 90%;
+    padding: 2rem 2rem;
+    min-height: auto;
+  }
+  .addToCart {
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .PicingSectionMain h1 {
+    font-size: 1.8rem;
+  }
+  .plan {
+    width: 95%;
+    padding: 1.5rem 1.5rem;
+  }
+  .fetures h3 {
+    padding-left: 2rem;
+  }
+  .fetures h4 {
+    padding-left: 3rem;
+  }
+}
