@@ -1,7 +1,8 @@
 .TesttimonialMain {
-  min-height: 80vh;
+  min-height: auto;
   background-color: #0f0e13;
-  padding-bottom: 0;
+  padding: 0;
+  margin: 0;
   /* background-image: radial-gradient(
       at 0% 100%,
       hsla(253, 16%, 7%, 1) 0,
@@ -15,17 +16,18 @@
   text-align: center;
   font-size: clamp(2.5rem, 4vw, 3.5rem);
   font-weight: 500;
-  padding-top: 5rem;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .testimonials {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem auto;
+  margin: 1rem auto;
   padding: 0 2rem;
   width: 85%;
-  min-height: 60vh;
+  min-height: auto;
 }
 
 .testimonialBox {
@@ -42,7 +44,8 @@
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  margin-top: 6rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
 }
 
 #userImg {
@@ -95,13 +98,13 @@
 }
 
 .cloudHosting {
-  margin-top: 2rem;
-  padding: 2rem clamp(1rem, 5vw, 4rem);
+  margin-top: 1rem;
+  padding: 1.5rem clamp(1rem, 5vw, 4rem);
   width: 100%;
   min-height: 50rem;
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   gap: 2rem;
 }
 
@@ -169,6 +172,19 @@
   margin-top: 1rem;
   font-size: clamp(1.4rem, 2.5vw, 2rem);
 }
+
+/* Swiper Pagination Dots Styling */
+.swiper-pagination-bullet {
+  background-color: white !important;
+  opacity: 1 !important;
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #3b82f6 !important;
+}
+
 @media only screen and (max-width: 1546px) {
   .testimonials {
     width: 90%;

@@ -34,6 +34,7 @@
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.167);
+  flex-shrink: 0;
 }
 
 
@@ -151,6 +152,9 @@
 }
 
 @media only screen and (max-width: 1245px) {
+  .plans {
+    justify-content: center;
+  }
   .plan {
     width: clamp(300px, 40%, 500px);
   }

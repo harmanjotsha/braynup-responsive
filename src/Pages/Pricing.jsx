@@ -12,11 +12,12 @@ const styles = {
     margin: '0 auto',
   },
   grid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+    display: 'flex',
+    flexWrap: 'wrap',
     gap: '24px',
     padding: '20px',
-    alignItems: 'stretch' // Ensure all cards stretch
+    justifyContent: 'center',
+    alignItems: 'stretch'
   },
   
   card: {
@@ -27,7 +28,11 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     position: 'relative',
-    border: '1px solid #222222'
+    border: '1px solid #222222',
+    width: '100%',
+    minWidth: '300px',
+    maxWidth: '400px',
+    flex: '1 1 300px'
   },
   
   popularCard: {

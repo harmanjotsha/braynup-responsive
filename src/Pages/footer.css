@@ -185,20 +185,50 @@ li {
   }
   .Parts {
     gap: 3rem;
+    justify-content: center;
   }
   .footerSectionPart {
     width: 45%;
     min-width: 180px;
+    text-align: center;
+    align-items: center;
+  }
+  .links {
+    align-items: center;
   }
 }
 @media only screen and (max-width: 586px) {
   .lastPart {
     display: none;
   }
+  .Parts {
+    justify-content: center;
+    gap: 2.5rem;
+  }
   .footerSectionPart {
     width: 45%;
+    text-align: center;
+    align-items: center;
+    min-width: 160px;
+  }
+  .links {
+    align-items: center;
   }
 }
+
+/* Additional breakpoint for better centering on medium-small screens */
+@media only screen and (max-width: 520px) {
+  .Parts {
+    gap: 2rem;
+  }
+  .footerSectionPart {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    align-items: center;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .FooterMain {
     padding-bottom: 0;
@@ -216,6 +246,7 @@ li {
   .socialLinks {
     width: 100%;
     margin-top: 2rem;
+    justify-content: center;
   }
   .socialLinks .slink {
     width: 6rem;
@@ -228,8 +259,18 @@ li {
   .footers {
     padding: 2rem 1rem 0.5rem;
   }
+  .Parts {
+    justify-content: center;
+    gap: 2rem;
+  }
   .footerSectionPart {
-    width: 45%;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    align-items: center;
+  }
+  .links {
+    align-items: center;
   }
   .footers p {
     font-size: 1.1rem;
@@ -252,6 +293,7 @@ li {
   }
   .socialLinks {
     margin-top: 1.5rem;
+    justify-content: center;
   }
   .socialLinks .slink {
     width: 5.5rem;
@@ -264,8 +306,18 @@ li {
   .footers {
     padding: 1.5rem 1rem 0.3rem;
   }
+  .Parts {
+    justify-content: center;
+    gap: 1.5rem;
+  }
   .footerSectionPart {
-    width: 45%;
+    width: 100%;
+    max-width: 220px;
+    text-align: center;
+    align-items: center;
+  }
+  .links {
+    align-items: center;
   }
   .footers p {
     font-size: 1rem;
