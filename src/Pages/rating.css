@@ -1,7 +1,7 @@
 .ratingMainContainer {
   background-color: #0f0e13;
   color: white;
-  padding: clamp(3rem, 5vw, 5rem) clamp(1rem, 3vw, 2rem);
+  padding: clamp(3rem, 5vw, 5rem) clamp(1rem, 3vw, 2rem) clamp(2rem, 3vw, 3rem);
   text-align: center;
   min-height: 50vh;
 }
@@ -118,7 +118,7 @@
 /* Mobile portrait */
 @media only screen and (max-width: 600px) {
   .ratingMainContainer {
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 1rem;
   }
 
   .ratingTitle {
@@ -154,7 +154,7 @@
 /* Small mobile */
 @media only screen and (max-width: 480px) {
   .ratingMainContainer {
-    padding: 2rem 0.5rem;
+    padding: 2rem 0.5rem 0.5rem;
   }
 
   .ratingTitle {

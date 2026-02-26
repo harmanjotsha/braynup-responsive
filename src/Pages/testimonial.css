@@ -1,6 +1,7 @@
 .TesttimonialMain {
   min-height: 80vh;
   background-color: #0f0e13;
+  padding-bottom: 0;
   /* background-image: radial-gradient(
       at 0% 100%,
       hsla(253, 16%, 7%, 1) 0,
@@ -100,7 +101,7 @@
   min-height: 50rem;
   display: flex;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   gap: 2rem;
 }
 
@@ -252,6 +253,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .TesttimonialMain {
+    padding-bottom: 0;
+  }
   .TesttimonialMain h1 {
     padding-top: 2rem;
     font-size: 2rem;
@@ -277,6 +281,9 @@
     transform: translateX(-50%);
     width: 7rem;
     height: 7rem;
+  }
+  .cloudHosting {
+    margin-bottom: 1rem;
   }
   .rightSideCloud {
     width: 100%;
@@ -308,6 +315,9 @@
 }
 
 @media only screen and (max-width: 400px) {
+  .TesttimonialMain {
+    padding-bottom: 0;
+  }
   .TesttimonialMain h1 {
     font-size: 1.8rem;
   }
@@ -330,5 +340,8 @@
   }
   .testimonialBox h3 {
     font-size: 1.2rem;
+  }
+  .cloudHosting {
+    margin-bottom: 0.5rem;
   }
 }

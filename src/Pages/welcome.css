@@ -144,8 +144,7 @@ li svg {
   font-size: clamp(1.4rem, 2vw, 1.8rem);
   padding: 1.2rem clamp(2rem, 5vw, 5rem);
   border-radius: 1rem;
-  outline: auto;
-  outline-width: 1px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
   background-color: transparent;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.45);
   transition: all 0.3s ease-in-out;
@@ -176,12 +175,12 @@ li svg {
   }
   .leftSideWelcome {
     width: 100%;
-    margin-bottom: 4rem;
-    padding: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
   }
   .rightSideWelcome {
     width: 100%;
-    padding: 2rem;
+    padding: 1.5rem 2rem;
   }
   .rightSideWelcome h1 {
     font-size: clamp(2.2rem, 5vw, 3rem);
@@ -195,11 +194,11 @@ li svg {
 
 @media only screen and (max-width: 554px) {
   .leftSideWelcome {
-    margin-bottom: 2rem;
-    padding: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
   }
   .rightSideWelcome {
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1rem;
   }
   .rightSideWelcome h1 {
     font-size: 2rem;
@@ -211,11 +210,16 @@ li svg {
     margin-bottom: 1.5rem;
   }
   .rightSideWelcome h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+  .rightSideWelcome strong {
+    font-size: 3rem;
   }
   .keypoint {
-    font-size: 1.2rem;
-    line-height: 2.5rem;
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    margin-top: 0.5rem;
   }
   .timing {
     margin-top: 2rem;
@@ -233,38 +237,85 @@ li svg {
     max-width: 35rem;
   }
   .startedBtn1 {
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    margin-top: 1rem;
+  }
+  .startedBtn {
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+  }
+  .referBtn {
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
   }
 }
 
 @media only screen and (max-width: 400px) {
+  .leftSideWelcome {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .rightSideWelcome {
+    padding: 0.5rem;
+  }
   .rightSideWelcome h1 {
     font-size: 1.8rem;
     line-height: 2.5rem;
   }
   .rightSideWelcome h3 {
-    font-size: 1.3rem;
-  }
-  .keypoint {
-    font-size: 1.1rem;
-    line-height: 2.2rem;
-  }
-}
-
-@media only screen and (max-width: 365px) {
-  .rightSideWelcome h1 {
-    font-size: 1.6rem;
-    line-height: 2.2rem;
-  }
-  .rightSideWelcome h3 {
     font-size: 1.2rem;
+  }
+  .rightSideWelcome strong {
+    font-size: 2.8rem;
   }
   .keypoint {
     font-size: 1rem;
     line-height: 2rem;
   }
+  .startedBtn {
+    padding: 0.9rem 1.5rem;
+    font-size: 1.2rem;
+  }
+  .referBtn {
+    padding: 0.9rem 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .leftSideWelcome {
+    padding: 0.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .rightSideWelcome {
+    padding: 0.3rem;
+  }
+  .rightSideWelcome h1 {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+  .rightSideWelcome h3 {
+    font-size: 1.1rem;
+  }
+  .rightSideWelcome strong {
+    font-size: 2.5rem;
+  }
+  .keypoint {
+    font-size: 0.95rem;
+    line-height: 1.8rem;
+  }
   li svg {
     min-width: 24px;
     min-height: 24px;
+  }
+  .startedBtn {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.1rem;
+  }
+  .referBtn {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.1rem;
   }
 }

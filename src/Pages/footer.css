@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 100vh;
   background-color: #0f0e13;
-  
+  padding-bottom: 0;
   position: relative;
 }
 
@@ -149,6 +149,7 @@ li {
   color: rgba(233, 224, 224, 0.815);
   text-align: center;
   margin-top: 2rem;
+  margin-bottom: 0;
 }
 .footers p a {
   color: rgba(255, 255, 255, 0.815);
@@ -199,9 +200,12 @@ li {
   }
 }
 @media only screen and (max-width: 480px) {
+  .FooterMain {
+    padding-bottom: 0;
+  }
   .fhhostingDiv {
     width: 95%;
-    padding: 3rem 1rem 2rem;
+    padding: 3rem 1rem 1rem;
   }
   .fhhostingDiv h2 {
     font-size: 1.4rem;
@@ -211,6 +215,7 @@ li {
   }
   .socialLinks {
     width: 100%;
+    margin-top: 2rem;
   }
   .socialLinks .slink {
     width: 6rem;
@@ -220,19 +225,33 @@ li {
   .fa-brands {
     font-size: 3.8rem;
   }
+  .footers {
+    padding: 2rem 1rem 0.5rem;
+  }
   .footerSectionPart {
     width: 45%;
   }
   .footers p {
     font-size: 1.1rem;
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
   }
 }
 @media only screen and (max-width: 380px) {
+  .FooterMain {
+    padding-bottom: 0;
+  }
+  .fhhostingDiv {
+    padding: 2rem 1rem 1rem;
+  }
   .fhhostingDiv h2 {
     font-size: 1.3rem;
   }
   .fhhostingDiv p {
     font-size: 1.2rem;
+  }
+  .socialLinks {
+    margin-top: 1.5rem;
   }
   .socialLinks .slink {
     width: 5.5rem;
@@ -242,10 +261,15 @@ li {
   .fa-brands {
     font-size: 3.5rem;
   }
+  .footers {
+    padding: 1.5rem 1rem 0.3rem;
+  }
   .footerSectionPart {
     width: 45%;
   }
   .footers p {
     font-size: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 0.3rem;
   }
 }

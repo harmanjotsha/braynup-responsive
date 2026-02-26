@@ -1,7 +1,7 @@
 .PicingSectionMain {
   background-color: #0f0e13;
   min-height: 100vh;
-  padding: 2rem 0;
+  padding: 2rem 0 3rem 0;
 }
 
 .PicingSectionMain h1 {
@@ -70,11 +70,12 @@
 .plan h6{
   font-size: clamp(1.6rem, 2.5vw, 2rem);
   font-weight: 400;
+  margin-top: 0.5rem;
 }
 .plan strong{
   font-size: clamp(3.5rem, 5vw, 5rem);
   font-weight: 700;
-  margin-top: auto;
+  margin-top: 0.3rem;
 }
 #price {
   font-weight: 400;
@@ -90,7 +91,7 @@
 }
 
 .addToCart {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   font-size: clamp(1.6rem, 2.5vw, 2.2rem);
   padding: 1.2rem clamp(5%, 15%, 22%);
   outline: none;
@@ -182,28 +183,49 @@
 
 @media only screen and (max-width: 554px) {
   .PicingSectionMain {
-    padding-top: 2rem;
+    padding: 2rem 0 2rem 0;
   }
   .PicingSectionMain h1 {
     font-size: 2rem;
   }
   .plan {
     width: 90%;
-    padding: 2rem 2rem;
+    padding: 2rem 1.5rem;
     min-height: auto;
+  }
+  .plan h6 {
+    margin-top: 0.5rem;
+  }
+  .plan strong {
+    font-size: 3rem;
   }
   .addToCart {
     padding: 1rem 2rem;
+    font-size: 1.4rem;
+    margin-top: 1rem;
   }
 }
 
 @media only screen and (max-width: 400px) {
+  .PicingSectionMain {
+    padding: 1.5rem 0 1.5rem 0;
+  }
   .PicingSectionMain h1 {
     font-size: 1.8rem;
   }
   .plan {
     width: 95%;
-    padding: 1.5rem 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+  .plan h6 {
+    font-size: 1.4rem;
+  }
+  .plan strong {
+    font-size: 2.8rem;
+  }
+  .addToCart {
+    padding: 0.9rem 1.8rem;
+    font-size: 1.3rem;
   }
   .fetures h3 {
     padding-left: 2rem;
